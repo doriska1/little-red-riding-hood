@@ -7,9 +7,8 @@ require_relative 'wolf'
 require_relative 'hunter'
 require_relative 'cottage'
 
-
-logger = Logger.new(STDOUT)
-logger.debug("Long, long time ago...")
+logger = Logger.new($stdout)
+logger.debug('Long, long time ago...')
 
 little_red_riding_hood = LittleRedRidingHood.new
 logger.debug("there lived a girl called #{little_red_riding_hood.title}.")

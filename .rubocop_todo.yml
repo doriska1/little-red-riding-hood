@@ -19,3 +19,4 @@ Style/Documentation:
     - 'person.rb'
     - 'place.rb'
     - 'wolf.rb'
+    - 'hunter.rb'
