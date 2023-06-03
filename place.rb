@@ -4,20 +4,20 @@ require 'logger'
 
 class Place
   attr_reader :title
-  attr_accessor :people
+  attr_accessor :characters
 
   def initialize
-    @people = []
+    @characters = []
     @logger = Logger.new($stdout)
   end
 
-  def add_person(person)
-    @people.push(person)
-    @logger.debug("In #{@title} is #{person.title}.")
+  def add_character(character)
+    @characters.push(character)
+    @logger.debug("In #{@title} is #{character.title}.")
   end
 
-  def remove_person(person)
-    @people.delete person
-    @logger.debug("#{person.title} is not in #{@title}.")
+  def remove_character(character)
+    @characters.delete character
+    @logger.debug("#{character.title} is not in #{@title}.")
   end
 end

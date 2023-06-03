@@ -1,8 +1,7 @@
 # frozen_string_literal: true
-
 require 'logger'
 
-class Animal
+class Character
   attr_reader :title
 
   def initialize

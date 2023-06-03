@@ -1,12 +1,16 @@
 # frozen_string_literal: true
 
-require_relative 'person'
+require_relative 'eatable'
 require_relative 'grandmother'
 
-class LittleRedRidingHood < Person
+class LittleRedRidingHood < Character
+  attr_accessor :eaten
+
+  include Eatable
   def initialize
     super
     @title = 'Little Red Riding Hood'
+    @eaten = false
   end
 
   def delivering_food(person)

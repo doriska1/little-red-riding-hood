@@ -1,15 +1,6 @@
 # frozen_string_literal: true
 
-require 'logger'
-
-class Person
-  attr_reader :title
-  attr_accessor :eaten
-
-  def initialize
-    @logger = Logger.new($stdout)
-    @eaten = false
-  end
+module Eatable
 
   def eatable?
     if @eaten
@@ -23,4 +14,5 @@ class Person
     @eaten = true
     @logger.debug("#{@title} is eaten.")
   end
+  
 end

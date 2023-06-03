@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Hunter < Person
+class Hunter < Character
   def initialize
     super
     @title = 'Hunter'
