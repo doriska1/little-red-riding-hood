@@ -10,7 +10,7 @@ class Wolf < Character
 
   def eat(person)
     if person.eatable?
-      @logger.debug("#{@title} eat #{person.title}.")
+      @logger.debug("#{@title} eats #{person.title}.")
       person.eaten!
     else
       @logger.debug("#{@title} can't eat #{person.title}.")

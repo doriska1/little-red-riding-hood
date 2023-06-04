@@ -13,7 +13,7 @@ class Place
 
   def add_character(character)
     @characters.push(character)
-    @logger.debug("In #{@title} is #{character.title}.")
+    @logger.debug("#{character.title} is in #{@title}.")
   end
 
   def remove_character(character)
