@@ -2,5 +2,11 @@
 
 ### How to run
 ```bash
-ruby main.rb
+ruby src/main.rb
+```
+### How to run test
+
+```bash
+bundle install
+rspec
 ```
