@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require_relative '../src/grandmother'
 
 describe Grandmother do
   subject(:grandmother) { described_class.new }
 
   it 'should have attribute :title - Grandmother, :eaten - false' do
-    expect(grandmother).to have_attributes(:title => "Grandmother", :eaten => false)
+    expect(grandmother).to have_attributes(title: 'Grandmother', eaten: false)
   end
 
   describe 'check eatable module' do

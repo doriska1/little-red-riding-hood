@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require_relative '../src/little_red_riding_hood'
 
 describe LittleRedRidingHood do
   subject(:little_red_riding_hood) { described_class.new }
 
   it 'should have attribute :title - Little Red Riding Hood, :eaten - false' do
-    expect(little_red_riding_hood).to have_attributes(:title => "Little Red Riding Hood", :eaten => false)
+    expect(little_red_riding_hood).to have_attributes(title: 'Little Red Riding Hood', eaten: false)
   end
 
   describe 'check eatable module' do

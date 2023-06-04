@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../src/cottage'
 require_relative '../src/character'
 
@@ -6,7 +8,7 @@ describe Cottage do
   subject(:character) { build(:character) }
 
   it 'should have attribute :title - Cottage' do
-    expect(cottage).to have_attributes(:title => "Cottage")
+    expect(cottage).to have_attributes(title: 'Cottage')
   end
 
   describe 'check parent class methods' do

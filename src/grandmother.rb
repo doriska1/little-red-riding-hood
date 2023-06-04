@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative 'eatable'
 require_relative 'character'
 

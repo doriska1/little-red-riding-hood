@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module Eatable
-
   def eatable?
     if @eaten
       false
@@ -14,5 +13,4 @@ module Eatable
     @eaten = true
     @logger.debug("#{@title} is eaten.")
   end
-  
 end

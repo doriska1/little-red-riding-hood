@@ -1,8 +1,8 @@
 # frozen_string_literal: true
+
 require_relative 'character'
 
 class Wolf < Character
-
   def initialize
     super
     @title = 'Wolf'
